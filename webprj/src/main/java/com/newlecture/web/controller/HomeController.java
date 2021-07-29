@@ -16,9 +16,8 @@ public class HomeController {
 	public String index() {
 		
 		return "Hello Index * 1";
-		
-		// 뷰페이지 반환, 반드시 root.index 라고 기입해야 tiles가 적용된다.
-		//return "root.index";
+//		// 뷰페이지 반환, 반드시 root.index 라고 기입해야 tiles가 적용된다.
+//		//return "root.index";
 	}
 
 	
