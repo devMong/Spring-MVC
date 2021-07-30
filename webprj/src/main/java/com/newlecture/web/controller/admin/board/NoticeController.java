@@ -16,7 +16,11 @@ public class NoticeController { // <bean name="adminNoticeController" class="com
 	@RequestMapping("reg")
 	@ResponseBody
 	// 사용자가 입력한 것을 확인하는 방식으로 사용
-	public String reg(String title, String content, String category) {
+	public String reg(String title, String content, String category, String[] foods, String food) {
+		System.out.println(category);
+			for(String f : foods) {
+				System.out.println(f);
+			}
 		return String.format("title:%s<br>content:%s<br>category:%s", title, content, category);
 	}
 
